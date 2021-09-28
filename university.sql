@@ -51,3 +51,8 @@ GROUP BY `office_address`;
 SELECT ROUND(AVG(`vote`), 1) AS "average_vote_exam", `exam_id` 
 FROM `exam_student`
 GROUP BY `exam_id`;
+
+-- GROUP BY 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
+SELECT COUNT(*) AS "degrees_num", `department_id` 
+FROM `degrees`
+GROUP BY `department_id`;
